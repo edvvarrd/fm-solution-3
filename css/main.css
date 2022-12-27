@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Red Hat Display", sans-serif;
+  color: #87879d;
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+}
+
+h1,
+h2,
+.overline,
+button {
+  font-weight: 900;
+}
+
+h1,
+h2 {
+  color: #28283d;
+}
+
+h1 {
+  font-size: 6.4rem;
+  line-height: 6.4rem;
+}
+
+h2 {
+  font-size: 4rem;
+  line-height: 4.4rem;
+}
+
+.overline {
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  color: #4d96a9;
+  letter-spacing: 0.4rem;
+  text-transform: uppercase;
+}
+
+button {
+  padding: 1em 1.5em;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  color: #fafafa;
+  border: none;
+  border-radius: 2.9rem;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.primary {
+  background-color: #4d96a9;
+}
+.primary:hover {
+  background-color: #71c0d4;
+}
+.primary span {
+  color: #8fe3f9;
+}
+
+.secondary {
+  background-color: #855fb1;
+}
+.secondary:hover {
+  background-color: #b18bdd;
+}
+.secondary span {
+  color: #d9b8ff;
+}/*# sourceMappingURL=main.css.map */

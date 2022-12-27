@@ -1,0 +1,58 @@
+// TYPOGRAPHY
+
+h1,
+h2,
+.overline,
+button {
+	font-weight: 900;
+}
+h1,
+h2 {
+	color: $dark;
+}
+h1 {
+	font-size: 6.4rem;
+	line-height: 6.4rem;
+}
+h2 {
+	font-size: 4rem;
+	line-height: 4.4rem;
+}
+.overline {
+	font-size: 1.6rem;
+	line-height: 2.6rem;
+	color: $primary;
+	letter-spacing: 0.4rem;
+	text-transform: uppercase;
+}
+
+// BUTTONS
+
+button {
+	padding: 1em 1.5em;
+	font-size: 1.6rem;
+	line-height: 1.6rem;
+	color: $white;
+	border: none;
+	border-radius: 2.9rem;
+	transition: background-color 0.3s;
+	cursor: pointer;
+}
+.primary {
+	background-color: $primary;
+	&:hover {
+		background-color: $primary-active;
+	}
+	span {
+		color: $primary-text;
+	}
+}
+.secondary {
+	background-color: $secondary;
+	&:hover {
+		background-color: $secondary-active;
+	}
+	span {
+		color: $secondary-text;
+	}
+}
