@@ -113,6 +113,7 @@ body {
 // FOOTER
 .footer {
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	width: 100%;
@@ -142,7 +143,7 @@ body {
 			color: $white;
 		}
 		p {
-			margin: 2em 0;
+			margin: 3em 0;
 		}
 	}
 	&__action {

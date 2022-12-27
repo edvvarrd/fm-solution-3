@@ -101,6 +101,7 @@ body {
 
 .footer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -132,7 +133,7 @@ body {
   color: #fafafa;
 }
 .footer__content p {
-  margin: 2em 0;
+  margin: 3em 0;
 }
 .footer__action {
   align-self: center;
@@ -230,7 +231,7 @@ button {
 }
 .section-mark-second {
   top: 6.5rem;
-  margin: 2em 0 2em 0;
+  margin: 3em 0 2em 0;
 }
 
 @media (min-width: 576px) {
