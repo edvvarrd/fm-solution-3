@@ -9,4 +9,14 @@
 			}
 		}
 	}
+	// MAIN
+	.main {
+		&__gallery {
+			img {
+				width: 23%;
+				margin: 0;
+				border-radius: 8px;
+			}
+		}
+	}
 }
