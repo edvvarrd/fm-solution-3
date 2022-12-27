@@ -21,17 +21,17 @@ body {
 }
 
 .wrapper {
+  display: flex;
   padding: 0 1em;
   width: 100%;
   max-width: 1400px;
 }
 
 .header {
-  width: 100%;
-  display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  overflow: hidden;
 }
 .header__logo {
   margin: 2em 0;
@@ -42,19 +42,15 @@ body {
 }
 .header__content {
   display: flex;
-  padding: 0 1em;
   flex-direction: column;
   align-items: center;
 }
-.header__desktopHero {
-  display: none;
-}
-.header__title {
+.header h1 {
   max-width: 450px;
   margin: 0.5em 0;
 }
-.header__text {
-  max-width: 450px;
+.header p {
+  max-width: 475px;
   margin: 0.5em 0;
 }
 .header__action {
@@ -64,6 +60,36 @@ body {
 }
 .header__action button {
   margin: 0.5em 0;
+}
+.header__desktopHero {
+  display: none;
+}
+
+.main {
+  flex-direction: column;
+}
+.main__gallery {
+  display: flex;
+  justify-content: space-between;
+  margin: 3em 0;
+}
+.main__gallery img {
+  width: 23%;
+  border-radius: 8px;
+}
+.main__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2em 0 4em 0;
+  text-align: center;
+}
+.main__content h2 {
+  max-width: 450px;
+  margin: 0.5em 0;
+}
+.main__content p {
+  max-width: 475px;
 }
 
 h1,
@@ -97,7 +123,7 @@ h2 {
 }
 
 button {
-  padding: 1.4em 2.3em;
+  padding: 1.4em 2.5em;
   font-size: 1.6rem;
   line-height: 1.6rem;
   color: #fafafa;
@@ -127,6 +153,29 @@ button {
   color: #d9b8ff;
 }
 
+.section-mark {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  margin: 6em 0 2em 0;
+  font-weight: 900;
+  border: 1px solid #d8d8d8;
+  border-radius: 50%;
+}
+.section-mark::before {
+  content: "";
+  width: 1px;
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  top: -100px;
+  background-color: #d8d8d8;
+}
+
 @media (min-width: 576px) {
   .header__action {
     flex-direction: row;
@@ -136,7 +185,7 @@ button {
     margin: 0 0.5em;
   }
 }
-@media (min-width: 756px) {
+@media (min-width: 768px) {
   .header__hero {
     display: none;
   }
@@ -146,13 +195,14 @@ button {
   }
   .header__content {
     min-width: 500px;
-    margin: 0 3em;
+    margin: 4em 3em;
   }
   .header__desktopHero {
     display: block;
     -o-object-fit: none;
        object-fit: none;
-    display: block;
-    object-fit: none;
+  }
+  .main__content p {
+    max-width: 550px;
   }
 }/*# sourceMappingURL=main.css.map */

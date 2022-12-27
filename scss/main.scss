@@ -28,6 +28,7 @@ body {
 }
 
 .wrapper {
+	display: flex;
 	padding: 0 1em;
 	width: 100%;
 	max-width: 1400px;
@@ -36,11 +37,10 @@ body {
 // HEADER
 
 .header {
-	width: 100%;
-	display: flex;
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
+	overflow: hidden;
 	&__logo {
 		margin: 2em 0;
 	}
@@ -50,19 +50,15 @@ body {
 	}
 	&__content {
 		display: flex;
-		padding: 0 1em;
 		flex-direction: column;
 		align-items: center;
 	}
-	&__desktopHero {
-		display: none;
-	}
-	&__title {
+	h1 {
 		max-width: 450px;
 		margin: 0.5em 0;
 	}
-	&__text {
-		max-width: 450px;
+	p {
+		max-width: 475px;
 		margin: 0.5em 0;
 	}
 	&__action {
@@ -71,6 +67,38 @@ body {
 		align-items: center;
 		button {
 			margin: 0.5em 0;
+		}
+	}
+	&__desktopHero {
+		display: none;
+	}
+}
+
+// MAIN
+
+.main {
+	flex-direction: column;
+	&__gallery {
+		display: flex;
+		justify-content: space-between;
+		margin: 3em 0;
+		img {
+			width: 23%;
+			border-radius: 8px;
+		}
+	}
+	&__content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 2em 0 4em 0;
+		text-align: center;
+		h2 {
+			max-width: 450px;
+			margin: 0.5em 0;
+		}
+		p {
+			max-width: 475px;
 		}
 	}
 }
