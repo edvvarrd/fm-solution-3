@@ -16,13 +16,48 @@ html {
 // ROOT
 
 body {
+	display: flex;
+	justify-content: center;
 	min-height: 100vh;
+	background-color: $white;
 	font-family: 'Red Hat Display', sans-serif;
 	color: $grey;
 	font-size: 1.8rem;
 	line-height: 2.6rem;
 }
 
+.wrapper {
+	padding: 0 1em;
+	width: 100%;
+	max-width: 1400px;
+}
+
+.header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	overflow: hidden;
+	&__logo {
+		align-self: center;
+		margin: 2em 0;
+	}
+	&__hero {
+		width: 115%;
+		margin: 2em 0;
+	}
+	&__title {
+		max-width: 450px;
+		margin: 0.5em 0;
+	}
+	&__text {
+		max-width: 450px;
+		margin: 0.5em 0;
+	}
+	&__action {
+		margin: 0.5em 0;
+	}
+}
 // IMPORTS
 
 @import 'components';

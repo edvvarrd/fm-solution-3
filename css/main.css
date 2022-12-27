@@ -9,11 +9,47 @@ html {
 }
 
 body {
+  display: flex;
+  justify-content: center;
   min-height: 100vh;
+  background-color: #fafafa;
   font-family: "Red Hat Display", sans-serif;
   color: #87879d;
   font-size: 1.8rem;
   line-height: 2.6rem;
+}
+
+.wrapper {
+  padding: 0 1em;
+  width: 100%;
+  max-width: 1400px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+.header__logo {
+  align-self: center;
+  margin: 2em 0;
+}
+.header__hero {
+  width: 115%;
+  margin: 2em 0;
+}
+.header__title {
+  max-width: 450px;
+  margin: 0.5em 0;
+}
+.header__text {
+  max-width: 450px;
+  margin: 0.5em 0;
+}
+.header__action {
+  margin: 0.5em 0;
 }
 
 h1,
@@ -47,12 +83,12 @@ h2 {
 }
 
 button {
-  padding: 1em 1.5em;
+  padding: 1.5em 2em;
   font-size: 1.6rem;
   line-height: 1.6rem;
   color: #fafafa;
   border: none;
-  border-radius: 2.9rem;
+  border-radius: 30px;
   transition: background-color 0.3s;
   cursor: pointer;
 }
