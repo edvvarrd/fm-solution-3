@@ -30,7 +30,6 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 0 1em;
   align-items: center;
   text-align: center;
 }
@@ -43,6 +42,7 @@ body {
 }
 .header__content {
   display: flex;
+  padding: 0 1em;
   flex-direction: column;
   align-items: center;
 }
