@@ -25,4 +25,25 @@
 			}
 		}
 	}
+	// SECTIONS
+	.section-mark {
+		&-second {
+			top: 6.5rem;
+			margin: 6em 0 2em 0;
+		}
+	}
+	// FOOTER
+	.footer {
+		&__content {
+			flex-direction: row;
+			justify-content: space-between;
+			text-align: left;
+			h2 {
+				width: 25%;
+			}
+			p {
+				width: 25%;
+			}
+		}
+	}
 }

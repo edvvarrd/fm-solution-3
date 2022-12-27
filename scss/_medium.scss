@@ -1,4 +1,8 @@
 @media (min-width: 576px) {
+	//TYPOGRAPHY
+	p {
+		max-width: 50rem;
+	}
 	// HEADER
 	.header {
 		&__action {
