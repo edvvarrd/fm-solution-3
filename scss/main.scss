@@ -39,14 +39,20 @@ body {
 	padding: 0 1em;
 	align-items: center;
 	text-align: center;
-	overflow: hidden;
 	&__logo {
-		align-self: center;
 		margin: 2em 0;
 	}
 	&__hero {
 		width: 115%;
 		margin: 2em 0;
+	}
+	&__content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	&__desktopHero {
+		display: none;
 	}
 	&__title {
 		max-width: 450px;

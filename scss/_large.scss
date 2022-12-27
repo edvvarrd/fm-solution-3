@@ -1,0 +1,21 @@
+@media (min-width: 756px) {
+	.header {
+		&__hero {
+			display: none;
+		}
+		&__container {
+			display: flex;
+			justify-content: center;
+		}
+		&__content {
+			min-width: 500px;
+			margin: 0 3em;
+		}
+		&__desktopHero {
+			display: block;
+			object-fit: none;
+			display: block;
+			object-fit: none;
+		}
+	}
+}
