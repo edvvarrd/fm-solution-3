@@ -87,7 +87,6 @@ body {
   text-align: center;
 }
 .main__content h2 {
-  max-width: 450px;
   margin: 0.5em 0;
 }
 
@@ -96,7 +95,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  min-height: 450px;
+  padding: 6em 0;
   position: relative;
   background-image: url("../img/desktop/image-footer.jpg");
   background-size: cover;
@@ -148,6 +147,7 @@ h1 {
 }
 
 h2 {
+  max-width: 450px;
   font-size: 4rem;
   line-height: 4.4rem;
 }
@@ -264,6 +264,9 @@ button {
   .section-mark-second {
     top: 6.5rem;
     margin: 6em 0 2em 0;
+  }
+  .footer {
+    padding: 8em 0;
   }
   .footer__content {
     flex-direction: row;
