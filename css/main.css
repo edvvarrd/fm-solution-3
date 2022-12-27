@@ -74,10 +74,19 @@ body {
   flex-wrap: wrap;
   margin: 3em 0;
 }
-.main__gallery img {
+.main__gallery .img {
   width: 48%;
   margin: 0.5em 0;
   border-radius: 8px;
+  overflow: hidden;
+}
+.main__gallery .img img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s;
+}
+.main__gallery .img img:hover {
+  transform: scale(1.1);
 }
 .main__content {
   display: flex;
@@ -235,10 +244,9 @@ button {
   .header__action button {
     margin: 0 0.5em;
   }
-  .main__gallery img {
+  .main__gallery .img {
     width: 23%;
     margin: 0;
-    border-radius: 8px;
   }
 }
 @media (min-width: 768px) {
