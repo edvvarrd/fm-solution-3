@@ -1,0 +1,11 @@
+@media (min-width: 576px) {
+	.header {
+		&__action {
+			flex-direction: row;
+			margin: 1em 0;
+			button {
+				margin: 0 0.5em;
+			}
+		}
+	}
+}
